@@ -1,0 +1,48 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "HomePage";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/LoginPage.css" asp-append-version="true" />
+</head>
+
+<div class="title_img">
+    <img src="~/images/binance_logo.png" />
+    <img src="~/images/metamask_logo.png" />
+    <img src="~/images/coinbase_logo.png" />
+    <img src="~/images/tokyo_logo.png" />
+</div>
+<div class=" home-title">
+    
+    <div class="title_content">
+        <h1 class="display-4">Discover, Collect And Sell Super Rare <span>NFTs</span></h1>
+        <span class="eclipse"s>
+            <img  src="~/images/Ellipse 62.png" />
+        </span>
+        
+        
+    </div>
+    
+    
+    <div class="login_form">
+        <form method="post">
+            <h2>LOGIN </h2>
+            <div style="color:red; list-style-type:none" asp-validation-summary="All"></div>
+            <div>
+                <label asp-for="email">Email</label> 
+                <input asp-for="email" type="text" placeholder="Enter your email" />
+            </div>
+            <div>
+                <label asp-for="password">Password</label>
+                <input asp-for="password" type="password" placeholder="Enter your password" />
+            </div>
+
+            <input type="submit" value="Login" />
+
+        </form>
+    </div>
+    
+</div>

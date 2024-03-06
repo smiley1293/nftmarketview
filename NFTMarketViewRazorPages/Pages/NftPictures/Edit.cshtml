@@ -1,0 +1,52 @@
+﻿@page
+@model NFTMarketViewRazorPages.Pages.NftPictures.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1 style="color:white">Edit</h1>
+
+<h4 style="color:white">NftPicture</h4>
+<hr />
+<div style="color:white" class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="NftPicture.NftId" />
+            <div class="form-group">
+                <label asp-for="NftPicture.NftName" class="control-label"></label>
+                <input asp-for="NftPicture.NftName" class="form-control" />
+                <span asp-validation-for="NftPicture.NftName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NftPicture.Description" class="control-label"></label>
+                <input asp-for="NftPicture.Description" class="form-control" />
+                <span asp-validation-for="NftPicture.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NftPicture.Price" class="control-label"></label>
+                <input asp-for="NftPicture.Price" class="form-control" />
+                <span asp-validation-for="NftPicture.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NftPicture.Image" class="control-label"></label>
+                <input asp-for="NftPicture.Image" class="form-control" />
+                <span asp-validation-for="NftPicture.Image" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NftPicture.CategoryId" class="control-label"></label>
+                <input asp-for="NftPicture.CategoryId" class="form-control" />
+                <span asp-validation-for="NftPicture.CategoryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+

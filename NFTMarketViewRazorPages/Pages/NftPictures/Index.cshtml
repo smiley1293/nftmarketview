@@ -1,0 +1,73 @@
+﻿@page
+@model NFTMarketViewRazorPages.Pages.NftPictures.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    
+}
+<head>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Account.css" asp-append-version="true" />
+</head>
+
+<h1>Index</h1>
+
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<div class="Nft_page">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.NftPicture[0].NftName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NftPicture[0].Description)
+                </th>
+                <th>
+                    
+                    @Html.DisplayNameFor(model => model.NftPicture[0].Price)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NftPicture[0].Image)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NftPicture[0].CategoryId)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.NftPicture)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NftName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        <i style="color:yellow" class="fa-solid fa-coins"></i>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Image)
+                        <img src="@Url.Page("Index", "GetImageFromBytes", new { id = item.NftId })" alt="Image" class="shadow">
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CategoryId)
+                    </td>
+                    <td>
+                        <a class="button btn_edit" asp-page="./Edit" asp-route-id="@item.NftId">Edit</a> |
+                        <a class="button btn_details" asp-page="./Details" asp-route-id="@item.NftId">Details</a> |
+                        <a class="button btn_del" asp-page="./Delete" asp-route-id="@item.NftId">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

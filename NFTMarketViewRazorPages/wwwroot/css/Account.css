@@ -1,0 +1,32 @@
+﻿body {
+    color:white;
+}
+
+.button {
+    /*border: 1px solid black;*/
+    padding: 3px 18px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+.btn_edit {
+    background-color: #f7af1c;
+}
+
+.btn_details {
+    background-color: #93d1d0;
+}
+
+.btn_del {
+    background-color: #e67984;
+}
+
+.btn_add {
+    background-color: #29504d;
+    color: #ffc56e;
+}
+table td,th{
+    color:white;
+}

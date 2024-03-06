@@ -1,0 +1,15 @@
+D:\PRN221\RazorPages\NFTMarketView\NFTMarketViewDAO\bin\Debug\net6.0\NFTMarketViewDAO.deps.json
+D:\PRN221\RazorPages\NFTMarketView\NFTMarketViewDAO\bin\Debug\net6.0\NFTMarketViewDAO.dll
+D:\PRN221\RazorPages\NFTMarketView\NFTMarketViewDAO\bin\Debug\net6.0\NFTMarketViewDAO.pdb
+D:\PRN221\RazorPages\NFTMarketView\NFTMarketViewDAO\bin\Debug\net6.0\NFTMatketViewBusinessObject.dll
+D:\PRN221\RazorPages\NFTMarketView\NFTMarketViewDAO\bin\Debug\net6.0\NFTMatketViewBusinessObject.pdb
+D:\PRN221\RazorPages\NFTMarketView\NFTMarketViewDAO\obj\Debug\net6.0\NFTMarketViewDAO.csproj.AssemblyReference.cache
+D:\PRN221\RazorPages\NFTMarketView\NFTMarketViewDAO\obj\Debug\net6.0\NFTMarketViewDAO.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRN221\RazorPages\NFTMarketView\NFTMarketViewDAO\obj\Debug\net6.0\NFTMarketViewDAO.AssemblyInfoInputs.cache
+D:\PRN221\RazorPages\NFTMarketView\NFTMarketViewDAO\obj\Debug\net6.0\NFTMarketViewDAO.AssemblyInfo.cs
+D:\PRN221\RazorPages\NFTMarketView\NFTMarketViewDAO\obj\Debug\net6.0\NFTMarketViewDAO.csproj.CoreCompileInputs.cache
+D:\PRN221\RazorPages\NFTMarketView\NFTMarketViewDAO\obj\Debug\net6.0\NFTMarketViewDAO.csproj.CopyComplete
+D:\PRN221\RazorPages\NFTMarketView\NFTMarketViewDAO\obj\Debug\net6.0\NFTMarketViewDAO.dll
+D:\PRN221\RazorPages\NFTMarketView\NFTMarketViewDAO\obj\Debug\net6.0\refint\NFTMarketViewDAO.dll
+D:\PRN221\RazorPages\NFTMarketView\NFTMarketViewDAO\obj\Debug\net6.0\NFTMarketViewDAO.pdb
+D:\PRN221\RazorPages\NFTMarketView\NFTMarketViewDAO\obj\Debug\net6.0\ref\NFTMarketViewDAO.dll

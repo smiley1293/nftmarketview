@@ -1,0 +1,56 @@
+﻿@page
+@model NFTMarketViewRazorPages.Pages.Accounts.IndexModel
+
+@{
+    ViewData["Title"] = "Account";
+}
+<head>
+    <link rel="stylesheet" href="~/css/Account.css" asp-append-version="true" />
+</head>
+<h1>Account List</h1>
+
+<p>
+    <a asp-page="Create">Create New Account</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Account[0].Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Account[0].Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Account[0].Fullname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Account[0].RoleId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Account) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fullname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoleId)
+            </td>
+            <td>
+                <a class="button btn_edit" asp-page="./Edit" asp-route-id="@item.Email">Edit</a> |
+                <a class="button btn_details" asp-page="./Details" asp-route-id="@item.Email">Details</a> |
+                <a class="button btn_del" asp-page="./Delete" asp-route-id="@item.Email">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
